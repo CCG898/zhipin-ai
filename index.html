@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI智能招聘系统 - 人力资源解决方案</title>
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --accent: #e74c3c;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: var(--dark);
+            margin: 1.5rem 0;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .comparison {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 3rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: var(--light);
+        }
+        .tech-showcase {
+            background: linear-gradient(135deg, var(--dark), #34495e);
+            color: white;
+            padding: 3rem 0;
+            margin: 3rem 0;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .tech-card {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+        }
+        .demo-request {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        form {
+            max-width: 500px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI智能招聘系统</h1>
+            <p>用人工智能重塑劳务派遣业务流程，节省70%人力成本</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>告别低效筛选，开启智能招聘新时代</h2>
+            <p>我们的系统通过AI技术自动完成简历筛选、智能面试和人才库管理，让您的HR团队专注于高价值工作</p>
+            <a href="#demo" class="btn">申请演示</a>
+            <a href="#features" class="btn" style="background: var(--primary);">了解功能</a>
+        </div>
+    </section>
+
+    <section id="features" class="container">
+        <h2>核心功能亮点</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <h3>智能简历解析</h3>
+                <p>自动提取简历关键信息，支持PDF/Word/图片多种格式，准确率超过95%</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI精准匹配</h3>
+                <p>基于深度学习算法，自动匹配岗位需求与候选人技能，筛选效率提升24倍</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>智能面试官</h3>
+                <p>7×24小时自动面试，评估沟通能力、专业技能和抗压能力，节省73%初面时间</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>人才库激活</h3>
+                <p>自动归档未通过简历，新岗位发布时智能唤醒匹配人才，复用率提升至65%</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container comparison">
+        <h2>效率对比</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>工作环节</th>
+                    <th>传统方式</th>
+                    <th>AI系统</th>
+                    <th>效率提升</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>简历初筛(100份)</td>
+                    <td>4小时</td>
+                    <td>10分钟</td>
+                    <td>24倍</td>
+                </tr>
+                <tr>
+                    <td>初面沟通(每人)</td>
+                    <td>30分钟</td>
+                    <td>8分钟</td>
+                    <td>73%</td>
+                </tr>
+                <tr>
+                    <td>人才激活</td>
+                    <td>手动查询</td>
+                    <td>自动推送</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top: 1rem; font-style: italic;">*基于某劳务派遣公司实际使用数据测算</p>
+    </section>
+
+    <section class="tech-showcase">
+        <div class="container">
+            <h2>核心技术优势</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>多模态NLP引擎</h3>
+                    <p>理解简历中的非结构化描述，自动匹配"Java开发"与"J2EE经验"等语义相似项</p>
+                </div>
+                <div class="tech-card">
+                    <h3>动态权重算法</h3>
+                    <p>根据岗位紧急程度自动调整筛选标准，优先推送高匹配度候选人</p>
+                </div>
+                <div class="tech-card">
+                    <h3>情感识别系统</h3>
+                    <p>面试中分析候选人微表情和语调变化，评估真实性和抗压能力</p>
+                </div>
+                <div class="tech-card">
+                    <h3>自学习人才图谱</h3>
+                    <p>持续优化匹配模型，使用越久推荐精准度越高</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo-request">
+        <div class="container">
+            <h2>立即体验智能招聘革命</h2>
+            <p>填写以下信息，我们将为您安排专属演示</p>
+            <form>
+                <input type="text" placeholder="您的姓名" required>
+                <input type="text" placeholder="公司名称" required>
+                <input type="tel" placeholder="联系电话" required>
+                <input type="email" placeholder="电子邮箱" required>
+                <textarea placeholder="您的具体需求(可选)" rows="3"></textarea>
+                <button type="submit" class="btn">申请免费演示</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 AI智能招聘系统 | 人力资源解决方案专家</p>
+            <p style="margin-top: 1rem;">联系电话: 400-888-XXXX | 邮箱: contact@airecruit.com</p>
+        </div>
+    </footer>
+</body>
+</html>
